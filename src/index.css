@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --geo-bg: #F7F8FA;
+    --geo-sidebar: #FFFFFF;
+    --geo-card: #FFFFFF;
+    --geo-border: #E9EBEF;
+    --geo-primary: #16A765;
+    --geo-secondary: #777D87;
+  }
+
+  body {
+    background-color: #F7F8FA;
+    color: #17191D;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Light theme refined scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F8FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8DCE3;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BDC3CD;
+}
+
+/* Subtle clean SaaS grid line utility */
+.geo-subtle-border {
+  border: 1px solid #E9EBEF;
+}
+
+/* Leaflet light theme customizations */
+.leaflet-container {
+  background-color: #F3F4F6 !important;
+  font-family: 'Inter', sans-serif !important;
+  outline: none;
+}
+
+.leaflet-bar {
+  border: 1px solid #E9EBEF !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.leaflet-bar a {
+  background-color: #FFFFFF !important;
+  color: #17191D !important;
+  border-bottom: 1px solid #E9EBEF !important;
+  transition: all 0.15s ease-in-out;
+}
+
+.leaflet-bar a:hover {
+  background-color: #F7F8FA !important;
+  color: #16A765 !important;
+}
+
+.leaflet-control-attribution {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  color: #777D87 !important;
+  font-size: 10px !important;
+  backdrop-filter: blur(4px);
+  border-top-left-radius: 6px;
+  border: 1px solid #E9EBEF;
+}
+
+.leaflet-control-attribution a {
+  color: #087D4A !important;
+  text-decoration: none;
+}
+.leaflet-control-attribution a:hover {
+  text-decoration: underline;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  color: #17191D !important;
+  border: 1px solid #E9EBEF !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.leaflet-popup-tip {
+  background: #FFFFFF !important;
+  border: 1px solid #E9EBEF !important;
+}
+
+/* Draggable swipe comparison handle */
+.swipe-handle {
+  touch-action: none;
+  cursor: ew-resize;
+}
